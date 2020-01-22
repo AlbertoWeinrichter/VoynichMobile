@@ -28,27 +28,28 @@ To use this project with Firebase authentication, some configuration steps are r
 - then, [download and copy](https://firebase.google.com/docs/flutter/setup#configure_an_ios_app) `GoogleService-Info.plist` into `iOS/Runner`, and add it to the Runner target in Xcode.
 - Add these lines to ios/Runner/info.plist
 
-    
-    <key>CFBundleName</key>
-	<string>NAME OF YOUR APP</string>
 
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>Editor</string>
-        			
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>REVERSE CLIENTE ID, FIND IT IN YOUR GOOGLE-SERVICE-Info.plist FILE</string>
-                <string> "fb" + YOUR FACEBOOK APP ID (should look like fb1234567890 )</string>
-            </array>
             
-        </dict>
-    </array>
-
-    <key>FacebookAppID</key>
-    <string>YOUR FACEBOOK APP ID</string>
-    <key>FacebookDisplayName</key>
-    <string>YOUR APP NAME</string>
+        <key>CFBundleName</key>
+        <string>NAME OF YOUR APP</string>
+        
+        <key>CFBundleURLTypes</key>
+        <array>
+            <dict>
+                <key>CFBundleTypeRole</key>
+                <string>Editor</string>
+                        
+                <key>CFBundleURLSchemes</key>
+                <array>
+                    <string>REVERSE CLIENTE ID, FIND IT IN YOUR GOOGLE-SERVICE-Info.plist FILE</string>
+                    <string> "fb" + YOUR FACEBOOK APP ID (should look like fb1234567890 )</string>
+                </array>
+                
+            </dict>
+        </array>
+        
+        <key>FacebookAppID</key>
+        <string>YOUR FACEBOOK APP ID</string>
+        <key>FacebookDisplayName</key>
+        <string>YOUR APP NAME</string>
 
